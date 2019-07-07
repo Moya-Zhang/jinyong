@@ -28,26 +28,29 @@ import java.io.IOException;
 import java.util.*;
 
 public class task1 {
-    static List<String> nameDic;
-    static{
-        nameDic = new ArrayList<String>();
-        try{
-            FileReader fr = new FileReader("/data/task2/people_name_list.txt");
-            BufferedReader bf = new BufferedReader(fr);
-            String str;
-            while((str=bf.readLine())!=null){
-                str = str.replace("\n","");
-                nameDic.add(str);
-                DicLibrary.insert(DicLibrary.DEFAULT, str,"nr",1000);//设置自定义分词
-            }
-            bf.close();
-            fr.close();
-        }catch (IOException ex){
-            ex.printStackTrace();
-        }
-    }
+
     public static class participleMapper
             extends Mapper<Object, Text, Text, Text> {
+        List<String> nameDic;
+        @Override
+        public void setup(Context context) throws IOException {
+            nameDic = new ArrayList<String>();
+            try{
+                Path path = new Path(context.getConfiguration().get("name_list", null));
+                FileReader fr = new FileReader(path.toString());
+                BufferedReader bf = new BufferedReader(fr);
+                String str;
+                while((str=bf.readLine())!=null){
+                    str = str.replace("\n","");
+                    nameDic.add(str);
+                    DicLibrary.insert(DicLibrary.DEFAULT, str,"nr",1000);//设置自定义分词
+                }
+                bf.close();
+                fr.close();
+            }catch (IOException ex){
+                ex.printStackTrace();
+            }
+        }
         @Override
         public void map(Object key, Text value, Context context)
                 throws IOException, InterruptedException {
@@ -114,7 +117,8 @@ public class task1 {
             System.err.println("Usage: participle of <in> <out>");
             System.exit(2);
         }
-        Job job = Job.getInstance(conf, "participle");
+        conf.set("name_list",args[0]+"People_List_unique.txt");
+        Job job = Job.getInstance(conf, "Participle");
         job.setJarByClass(task1.class);
         job.setMapperClass(participleMapper.class);
         job.setReducerClass(participleReducer.class);
@@ -124,7 +128,7 @@ public class task1 {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-        FileInputFormat.addInputPath(job, new Path(args[0]));
+        FileInputFormat.addInputPath(job, new Path(args[0]+"novels"));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         job.waitForCompletion(true);
