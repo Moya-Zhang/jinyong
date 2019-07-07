@@ -117,7 +117,7 @@ public class task1 {
             System.err.println("Usage: participle of <in> <out>");
             System.exit(2);
         }
-        conf.set("name_list",args[0]+"People_List_unique.txt");
+        conf.set("name_list",args[0]+"people_name_list.txt");
         Job job = Job.getInstance(conf, "Participle");
         job.setJarByClass(task1.class);
         job.setMapperClass(participleMapper.class);
@@ -141,7 +141,7 @@ public class task1 {
 //    public task1(){
 //        nameDic = new ArrayList<String>();
 //        try{
-//            FileReader fr = new FileReader("Data/People_List_unique.txt");
+//            FileReader fr = new FileReader("Data/people_name_list.txt");
 //            BufferedReader bf = new BufferedReader(fr);
 //            String str;
 //            while((str=bf.readLine())!=null){
