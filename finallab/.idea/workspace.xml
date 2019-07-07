@@ -8,32 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="34dfc199-c4dd-45ee-a6f5-d3e7c3650313" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alltask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alltask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/finallab.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alltask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alltask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task2$SumCombiner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task2$SumCombiner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task2$cooccurrenceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task2$cooccurrenceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task2$sumReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task2$sumReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task3$NewPartitioner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task3$NewPartitioner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task3$NormalizationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task3$NormalizationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task3$NormalizationReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task3$NormalizationReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$GraphBuilder$GraphBuilderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$GraphBuilder$GraphBuilderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$GraphBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$GraphBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankIter$PageRankIterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankIter$PageRankIterMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankIter$PageRankIterReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankIter$PageRankIterReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankIter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankIter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankViewer$PageRankViewerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankViewer$PageRankViewerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankViewer$myComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankViewer$myComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4$PageRankViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4$PageRankViewer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task4.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+            <state relative-caret-position="451">
+              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,7 +239,7 @@
     <configuration name="task1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task1" />
       <module name="finallab" />
-      <option name="PROGRAM_PARAMETERS" value="task2/ Task1Output/" />
+      <option name="PROGRAM_PARAMETERS" value="task2/people_name_list.txt task2/ Task1Output/" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -323,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562472632366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;xln&quot;">
+      <created>1562506860483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506860483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -337,6 +321,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.19679381" />
       <window_info id="Structure" order="1" sideWeight="0.50189394" side_tool="true" weight="0.29363906" />
@@ -352,7 +337,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49811321" weight="0.32655138" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6121406" visible="true" weight="0.16802907" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6121406" visible="true" weight="0.36875567" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5054313" side_tool="true" weight="0.3277592" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49456868" weight="0.30010173" />
@@ -469,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+        <state relative-caret-position="451">
+          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

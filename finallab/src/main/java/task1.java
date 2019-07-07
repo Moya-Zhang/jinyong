@@ -127,9 +127,9 @@ public class task1 {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-        if (otherArgs.length != 2) {
+        if (otherArgs.length != 3) {
             System.err.println("Usage: participle of <in> <out>");
-            System.exit(2);
+            System.exit(3);
         }
         conf.set("name_list",args[0]);
         Job job = Job.getInstance(conf, "Participle");
@@ -142,8 +142,8 @@ public class task1 {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-        FileInputFormat.addInputPath(job, new Path(args[0]+"novels"));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.addInputPath(job, new Path(args[1]+"novels"));
+        FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
         job.waitForCompletion(true);
 
