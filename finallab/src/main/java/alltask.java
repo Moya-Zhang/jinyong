@@ -11,6 +11,6 @@ public class alltask {
         task2.main(arg2);
         task3.main(arg3);
         task4.main(arg4);
-        
+
     }
 }

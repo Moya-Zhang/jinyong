@@ -28,23 +28,36 @@ import java.io.IOException;
 import java.util.*;
 
 public class task1 {
+    private static List<String> nameDic;
 
     public static class participleMapper
             extends Mapper<Object, Text, Text, Text> {
-        List<String> nameDic;
+        private static Path nameListPath;
         @Override
         public void setup(Context context) throws IOException {
-            nameDic = new ArrayList<String>();
+            nameDic = new ArrayList<>();
+
             try{
                 Path path = new Path(context.getConfiguration().get("name_list", null));
                 FileReader fr = new FileReader(path.toString());
+                //FileReader fr = new FileReader(nameListPath.toString());
+//                System.out.println(path.toString());
+
                 BufferedReader bf = new BufferedReader(fr);
                 String str;
+                File file =new File(path.toString());
+                nameListPath = new Path(path.toString());
+                Writer out =new FileWriter(file);
+                out.write(path.toString());
+
+
                 while((str=bf.readLine())!=null){
                     str = str.replace("\n","");
                     nameDic.add(str);
+                    out.write(str);
                     DicLibrary.insert(DicLibrary.DEFAULT, str,"nr",1000);//设置自定义分词
                 }
+                out.close();
                 bf.close();
                 fr.close();
             }catch (IOException ex){
@@ -54,6 +67,7 @@ public class task1 {
         @Override
         public void map(Object key, Text value, Context context)
                 throws IOException, InterruptedException {
+            //System.out.println("dasdasd\n");
             FileSplit fileSplit = (FileSplit) context.getInputSplit();
             String fileName = fileSplit.getPath().getName().split("(.txt)|(.TXT)")[0];
             String temp = value.toString();
@@ -62,12 +76,11 @@ public class task1 {
             String res = "";
             for (int i = 0; i < terms.size(); i++) {
                 String word = terms.get(i).getName();
-                if(nameDic.contains(word)){
-                    if(res.length()==0) {
+                if(nameDic.contains(word)) {
+                    if (res.length() == 0) {
                         res = res + word;
-                    }
-                    else
-                        res = res+" "+word;
+                    } else
+                        res = res + " " + word;
                 }
             }
             if(res.length()==0)
@@ -80,13 +93,14 @@ public class task1 {
                 valueWords.set(res);
                 context.write(keyFilename,valueWords);
             }
+            //context.write(new Text(fileName),new Text(nameListPath.toString()));
         }
     }
 
 //    public static class participleReducer extends Reducer<Text, Text, Text, Text> {
 //        public void reduce(Text key,Iterable<Text>values,Context context) throws IOException,InterruptedException{
 //            for(Text t : values)
-//                context.write(key,new Text(""));
+//                context.write(t,new Text(""));
 //        }
 //    }
 
@@ -117,7 +131,7 @@ public class task1 {
             System.err.println("Usage: participle of <in> <out>");
             System.exit(2);
         }
-        conf.set("name_list",args[0]+"people_name_list.txt");
+        conf.set("name_list",args[0]);
         Job job = Job.getInstance(conf, "Participle");
         job.setJarByClass(task1.class);
         job.setMapperClass(participleMapper.class);

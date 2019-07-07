@@ -187,14 +187,15 @@ public class task4 {
         String[] forGB = {"", args[1]+"/Data0"};
         forGB[0] = args[0];
         GraphBuilder.run(forGB);
-        
+
         String[] forItr = {"",""};
         for (int i=0; i<times; i++) {
             forItr[0] = args[1]+"/Data"+(i);
             forItr[1] = args[1]+"/Data"+(i+1);
             PageRankIter.run(forItr);
         }
-        
+
         String[] forRV = {args[1]+"/Data"+times, args[1]+"/FinalRank"};
         PageRankViewer.run(forRV);
-    }}
+    }
+}
