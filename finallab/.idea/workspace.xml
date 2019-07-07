@@ -7,24 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34dfc199-c4dd-45ee-a6f5-d3e7c3650313" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/People_List_unique.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸01飞狐外传.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸02雪山飞狐.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸03连城诀.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸04天龙八部.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸05射雕英雄传.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸06白马啸西风.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸07鹿鼎记.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸08笑傲江湖.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸09书剑恩仇录.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸10神雕侠侣.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸11侠客行.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸12倚天屠龙记.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸13碧血剑.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸14鸳鸯刀.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/novels/金庸15越女剑.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/finallab.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
+            <state relative-caret-position="2794">
               <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="108" column="78" selection-start-line="108" selection-start-column="78" selection-end-line="108" selection-end-column="78" />
+            <state relative-caret-position="-1627">
+              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#GraphBuilder#0;class#task4#0" />
@@ -270,6 +256,14 @@
       <option name="presentableId" value="Default" />
       <updated>1562053457333</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;xln&quot;">
+      <created>1562472632366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562472632366</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -312,6 +306,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;xln&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;xln&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -417,18 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="108" column="78" selection-start-line="108" selection-start-column="78" selection-end-line="108" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GraphBuilder#0;class#task4#0" />
-            <element signature="class#GraphBuilderMapper#0;class#GraphBuilder#0;class#task4#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/alltask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -448,10 +434,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
+        <state relative-caret-position="2794">
           <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1627">
+          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#GraphBuilder#0;class#task4#0" />
+            <element signature="class#GraphBuilderMapper#0;class#GraphBuilder#0;class#task4#0" />
           </folding>
         </state>
       </provider>
