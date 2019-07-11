@@ -8,6 +8,7 @@ import java.util.*;
 
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.filecache.DistributedCache;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.IntWritable;
@@ -38,26 +39,21 @@ public class task1 {
             nameDic = new ArrayList<>();
 
             try{
-                Path path = new Path(context.getConfiguration().get("name_list", null));
-                FileReader fr = new FileReader(path.toString());
+                //Path path = new Path(context.getConfiguration().get("name_list", null));
+                //FileReader fr = new FileReader(path.toString());
                 //FileReader fr = new FileReader(nameListPath.toString());
 //                System.out.println(path.toString());
-
+                FileReader fr = new FileReader(DistributedCache.getLocalCacheFiles(context.getConfiguration())[0].toString());
                 BufferedReader bf = new BufferedReader(fr);
+                //BufferedReader bf = new BufferedReader(fr);
                 String str;
-                File file =new File(path.toString());
-                nameListPath = new Path(path.toString());
-                Writer out =new FileWriter(file);
-                out.write(path.toString());
 
 
                 while((str=bf.readLine())!=null){
                     str = str.replace("\n","");
                     nameDic.add(str);
-                    out.write(str);
                     DicLibrary.insert(DicLibrary.DEFAULT, str,"nr",1000);//设置自定义分词
                 }
-                out.close();
                 bf.close();
                 fr.close();
             }catch (IOException ex){
@@ -126,13 +122,16 @@ public class task1 {
 
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
+        DistributedCache.addCacheFile(new Path("/data/task2/people_name_list.txt").toUri(), conf);
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-        if (otherArgs.length != 3) {
+        if (otherArgs.length != 2) {
             System.err.println("Usage: participle of <in> <out>");
-            System.exit(3);
+            System.exit(2);
         }
-        conf.set("name_list",args[0]);
+        String filename = args[0].substring(args[0].lastIndexOf("/") + 1, args[0].length());
+        conf.set("name_list",filename);
         Job job = Job.getInstance(conf, "Participle");
+        job.addCacheFile(new Path(args[0]).toUri());
         job.setJarByClass(task1.class);
         job.setMapperClass(participleMapper.class);
         job.setReducerClass(participleReducer.class);
@@ -142,8 +141,8 @@ public class task1 {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-        FileInputFormat.addInputPath(job, new Path(args[1]+"novels"));
-        FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        FileInputFormat.addInputPath(job, new Path(args[0]+"novels"));
+        FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         job.waitForCompletion(true);
 
