@@ -6,13 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34dfc199-c4dd-45ee-a6f5-d3e7c3650313" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task5.java" afterDir="false" />
+    <list default="true" id="34dfc199-c4dd-45ee-a6f5-d3e7c3650313" name="Default Changelist" comment="&quot;task5 bug version&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/finallab.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1$participleReducer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task3$NormalizationReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task3$NormalizationReducer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +31,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1007">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="132">
+              <caret line="139" column="47" selection-start-line="138" selection-start-column="8" selection-end-line="139" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,13 +43,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/task5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+            <state relative-caret-position="65">
+              <caret line="342" column="33" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1027#1044#0" expanded="true" />
-                <element signature="e#1107#1124#0" expanded="true" />
-                <element signature="e#2207#2224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
+            <state relative-caret-position="168">
               <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-310">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="167">
+              <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="195" column="9" selection-start-line="195" selection-start-column="9" selection-end-line="195" selection-end-column="9" />
+            <state relative-caret-position="2699">
+              <caret line="194" column="37" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/alltask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -108,6 +109,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>GenericOptionsParser</find>
+      <find>people</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,10 +123,10 @@
         <option value="$PROJECT_DIR$/src/main/java/PageRankSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4.java" />
         <option value="$PROJECT_DIR$/src/main/java/task2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task3.java" />
         <option value="$PROJECT_DIR$/src/main/java/alltask.java" />
         <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/java/task1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task3.java" />
         <option value="$PROJECT_DIR$/src/main/java/task5.java" />
       </list>
     </option>
@@ -278,9 +280,9 @@
     <list>
       <item itemvalue="Application.alltask" />
       <item itemvalue="Application.task1" />
+      <item itemvalue="Application.task4" />
       <item itemvalue="Application.task2" />
       <item itemvalue="Application.task3" />
-      <item itemvalue="Application.task4" />
       <item itemvalue="Application.task5" />
     </list>
     <recent_temporary>
@@ -309,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562472632366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;task5 bug version&quot;">
+      <created>1562852294567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562852294567</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;task5 version 1.0 and remove redundant ' ' in task3&quot;">
+      <created>1562985850476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562985850476</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -322,9 +338,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1601" height="893" extended-state="6" />
+    <frame x="65" y="-4" width="1851" height="893" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.1976819" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.09872435" />
       <window_info id="Structure" order="1" sideWeight="0.50189394" side_tool="true" weight="0.29363906" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -333,15 +350,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.50189394" side_tool="true" weight="0.29363906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299389" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49456868" weight="0.33586818" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49645847" weight="0.35361215" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8696617" visible="true" weight="0.33460075" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49084857" weight="0.35361215" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49811321" weight="0.32655138" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6121406" weight="0.33586818" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5035415" side_tool="true" visible="true" weight="0.3269962" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.25095057" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49456868" weight="0.2991128" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.13033833" side_tool="true" visible="true" weight="0.33460075" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4997227" weight="0.25095057" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49084857" weight="0.2991128" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -354,22 +371,74 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;xln&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;xln&quot;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/task5.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="&quot;task5 bug version&quot;" />
+    <MESSAGE value="&quot;task5 version 1.0 and remove redundant ' ' in task3&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;task5 version 1.0 and remove redundant ' ' in task3&quot;" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i==1250</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==1201</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==1200</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==1270</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>n.equals(&quot;左子穆&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tmp[0].equals(&quot;左子穆&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>key.toString().equals(&quot;左子穆&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>key.equals(&quot;左子穆&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>name.equals(&quot;左子穆&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>values.iterator().hasNext()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>values</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>values[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>preLabel</expression-string>
         <language-id>JAVA</language-id>
@@ -423,22 +492,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/alltask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapreduce/Reducer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="211">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapred/ReduceTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="139" column="47" selection-start-line="138" selection-start-column="8" selection-end-line="139" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="168">
           <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2699">
+          <caret line="194" column="37" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -447,25 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="195" column="9" selection-start-line="195" selection-start-column="9" selection-end-line="195" selection-end-column="9" />
+        <state relative-caret-position="167">
+          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,13 +560,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        <state relative-caret-position="65">
+          <caret line="342" column="33" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1027#1044#0" expanded="true" />
-            <element signature="e#1107#1124#0" expanded="true" />
-            <element signature="e#2207#2224#0" expanded="true" />
           </folding>
         </state>
       </provider>
