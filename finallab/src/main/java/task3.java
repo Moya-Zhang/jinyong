@@ -101,7 +101,8 @@ public class task3 {
             for(String p:postingList){
                 out.append(p.substring(0,p.indexOf(",")+1));
                 Long pCount = Long.parseLong(p.substring(p.indexOf(",") + 1, p.indexOf("|")));
-                double pWeight = (double)(Math.round((double)pCount/(double)count*100000)/100000);
+                double pWeight = (double)pCount/(double)count;
+                pWeight = (double) Math.round(pWeight * 100000) / 100000;
                 out.append(pWeight);
                 if(postingList.indexOf(p)!=postingList.size()-1)
                     out.append("|");
