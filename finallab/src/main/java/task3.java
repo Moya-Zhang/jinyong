@@ -104,7 +104,7 @@ public class task3 {
                 double pWeight = (double)(Math.round((double)pCount/(double)count*100000)/100000);
                 out.append(pWeight);
                 if(postingList.indexOf(p)!=postingList.size()-1)
-                    out.append("| ");
+                    out.append("|");
 //                else
 //                    out.append("]");
             }

@@ -107,7 +107,7 @@ public class task5 {
                 String[] neighbors = tuple[2].split("\\|");
                 for(String neighbor : neighbors){
                     String[] tmp = neighbor.split(",");
-                    double weight = Double.parseDouble(tmp[1]);
+                    //double weight = Double.parseDouble(tmp[1]);
                     context.write(new Text(tmp[0]), new Text(label + "#" + name));
                 }
                 //传递原始链接信息
@@ -182,6 +182,7 @@ public class task5 {
             Job job = Job.getInstance(conf, "LPAviewer");
             job.setJarByClass(LPAViewer.class);
             job.setMapperClass(LPAViewerMapper.class);
+            job.setReducerClass(LPAViewerReducer.class);
 
             job.setMapOutputKeyClass(Text.class);
             job.setMapOutputValueClass(Text.class);
@@ -203,7 +204,24 @@ public class task5 {
                 String[] line = value.toString().split("\t");
                 String name = line[0];
                 String label = line[1];
-                context.write(new Text(name),new Text(label));
+                // context.write(new Text(name),new Text(label));
+                context.write(new Text(label), new Text(name));
+            }
+        }
+
+        public static class LPAViewerReducer
+                extends Reducer<Text, Text, Text, Text>
+        {
+            public void reduce(Text key,Iterable<Text> values,Context context)
+                throws IOException, InterruptedException
+            {
+                StringBuilder sb = new StringBuilder();
+                for (Text text : values) {
+                    sb.append(text.toString());
+                    sb.append(",");
+                }
+                sb.deleteCharAt(sb.length()-1);
+                context.write(key, new Text(sb.toString()));
             }
         }
     }
@@ -322,7 +340,7 @@ public class task5 {
 //        }
 //
 //    }
-    private static int times = 5;
+    private static int times = 10;
 
     public static void main(String[] args) throws Exception {
         String[] forInit = {"", args[1] + "/Data0"};
