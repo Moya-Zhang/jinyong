@@ -27,7 +27,7 @@ public class task5 {
 //
     public static class InitLabel {
 
-        static int i = 0;
+        // static int i = 0;
 
         public static void run(String[] args)
                 throws IOException,InterruptedException,ClassNotFoundException
@@ -57,10 +57,9 @@ public class task5 {
                     throws IOException,InterruptedException
             {
                 // name+\t+label+\t+name1,weight1|name2,weight2......
-                String label = i + "\t";
-                i++;
                 String s = value.toString();
                 Text name = new Text(s.split("\t")[0]);
+                String label = name.toString() + "\t";
                 label += s.split("\t")[1];
                 context.write(name, new Text(label));
             }
