@@ -37,11 +37,10 @@ public class task1 {
         @Override
         public void setup(Context context) throws IOException {
             nameDic = new ArrayList<>();
-
             try{
-                //Path path = new Path(context.getConfiguration().get("name_list", null));
-                //FileReader fr = new FileReader(path.toString());
-                //FileReader fr = new FileReader(nameListPath.toString());
+//                Path path = new Path(context.getConfiguration().get("name_list", null));
+//                FileReader fr = new FileReader(path.toString());
+//                FileReader fr = new FileReader("task2/people_name_list.txt");
 //                System.out.println(path.toString());
                 FileReader fr = new FileReader(DistributedCache.getLocalCacheFiles(context.getConfiguration())[0].toString());
                 BufferedReader bf = new BufferedReader(fr);
@@ -128,8 +127,8 @@ public class task1 {
             System.err.println("Usage: participle of <in> <out>");
             System.exit(2);
         }
-        String filename = args[0].substring(args[0].lastIndexOf("/") + 1, args[0].length());
-        conf.set("name_list",filename);
+        //String filename = args[0].substring(args[0].lastIndexOf("/") + 1, args[0].length());
+        conf.set("name_list",args[0]+"people_name_list.txt");
         Job job = Job.getInstance(conf, "Participle");
         job.addCacheFile(new Path(args[0]).toUri());
         job.setJarByClass(task1.class);
