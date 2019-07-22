@@ -121,8 +121,8 @@ public class task4 {
                     if(tuple.length>1)
                         pagerank+=Double.parseDouble(tuple[1]);
                 }
-                double damping=0.85;
-                pagerank=(double)(1-damping)+damping*pagerank;
+                //double damping=0.85;
+                //pagerank=(double)(1-damping)+damping*pagerank;
                 context.write(new Text(key),new Text(String.valueOf(pagerank)+links));
             }
         }
